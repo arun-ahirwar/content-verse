@@ -1,0 +1,28 @@
+{
+  "name": "content-verse",
+  "version": "1.0.0",
+  "description": "Content Verse - multi-author blogging platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "compression": "^1.8.2",
+    "connect-pg-simple": "^10.0.0",
+    "ejs": "^7.0.2",
+    "express": "^5.3.0",
+    "express-session": "^1.19.0",
+    "helmet": "^8.3.0",
+    "multer": "^2.5.0",
+    "pg": "^8.23.1",
+    "sanitize-html": "^2.18.2",
+    "slugify": "^1.6.9",
+    "tinymce": "^7.9.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "private": true
+}

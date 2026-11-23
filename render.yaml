@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: content-verse
+    runtime: node
+    plan: free
+    buildCommand: tar xzf app.tgz && npm install
+    startCommand: npm start
+    healthCheckPath: /robots.txt
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: ADMIN_EMAIL
+        value: arun.ahirwar.online@gmail.com
+      - key: SITE_URL
+        value: https://content-verse.onrender.com
+      - key: DATABASE_URL
+        sync: false
